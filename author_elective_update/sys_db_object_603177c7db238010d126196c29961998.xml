@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>NeedIT</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_441942_needit_needit</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Task" name="task">d2189695db030010d126196c299619d6</super_class>
+        <sys_class_code/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-19 11:55:13</sys_created_on>
+        <sys_id>603177c7db238010d126196c29961998</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIT</sys_name>
+        <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
+        <sys_update_name>sys_db_object_603177c7db238010d126196c29961998</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-19 11:55:13</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_441942_needit.needit_user" name="x_441942_needit.needit_user">a5813fc3db238010d126196c2996195f</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEEDIT">9201b3c7db238010d126196c299619fd</application>
+        <file_path/>
+        <instance_id>6a47b5addb30f7c03050ac44d49619d6</instance_id>
+        <instance_name>dev80749</instance_name>
+        <name>sys_db_object_603177c7db238010d126196c29961998</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>NeedIT</label><live_feed_enabled>false</live_feed_enabled><name>x_441942_needit_needit</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">d2189695db030010d126196c299619d6</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-19 11:55:13</sys_created_on><sys_id>603177c7db238010d126196c29961998</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NeedIT</sys_name><sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package><sys_policy/><sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope><sys_update_name>sys_db_object_603177c7db238010d126196c29961998</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-19 11:55:13</sys_updated_on><update_access>false</update_access><user_role display_value="x_441942_needit.needit_user" name="x_441942_needit.needit_user">a5813fc3db238010d126196c2996195f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1284909244</payload_hash>
+        <record_name>NeedIT</record_name>
+        <reverted_from/>
+        <source>1601b3c7db238010d126196c299619ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-19 11:55:13</sys_created_on>
+        <sys_id>fd81bbc7db238010d126196c299619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170f2a5c04d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-19 11:55:13</sys_updated_on>
+        <type>Table</type>
+        <update_guid>2981bbc72e23801016d38b6a2f6b19b7</update_guid>
+        <update_guid_history>2981bbc72e23801016d38b6a2f6b19b7:-1284909244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-19 12:01:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>2c9f08010dff4c588a0298be936ef440</sys_id>
+        <sys_metadata>603177c7db238010d126196c29961998</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIT</sys_name>
+        <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
+        <sys_scope_delete display_value="">51f32838371246b8b9a359036f46e210</sys_scope_delete>
+        <sys_update_name>sys_db_object_603177c7db238010d126196c29961998</sys_update_name>
+        <sys_update_version display_value="sys_db_object_603177c7db238010d126196c29961998">fd81bbc7db238010d126196c299619b7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-19 12:01:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
