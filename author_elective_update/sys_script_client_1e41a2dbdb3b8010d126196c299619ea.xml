@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>on load check the request for filed if not empty update e-mail address.</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>GetEmailOnLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if (isLoading || newValue === '') {
+		return;
+	}
+
+	// Instantiate the GetEmailAddress Script Include 
+	var getEmailAddr = new GlideAjax('GetEmailAddress');
+	// Specify the getEmail method
+	getEmailAddr.addParam('sysparm_name','getEmail');
+	// Pass the Requested for sys_id
+	getEmailAddr.addParam('sysparm_userID', g_form.getValue('u_requested_for'));
+	// Send the request to the server
+	getEmailAddr.getXML(populateEmailField);
+
+
+	// When the response is back from the server
+	function populateEmailField(response){
+		// Extract the email address from the response, clear any value from the email field, 
+		// set new value in the email field
+		var emailFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+		g_form.clearValue('u_requested_for_email');
+		g_form.setValue('u_requested_for_email',emailFromScriptInclude);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 11:02:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e41a2dbdb3b8010d126196c299619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailOnLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
+        <sys_update_name>sys_script_client_1e41a2dbdb3b8010d126196c299619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 11:02:39</sys_updated_on>
+        <table>x_441942_needit_neeit</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEEDIT">9201b3c7db238010d126196c299619fd</application>
+        <file_path/>
+        <instance_id>6a47b5addb30f7c03050ac44d49619d6</instance_id>
+        <instance_name>dev80749</instance_name>
+        <name>sys_script_client_1e41a2dbdb3b8010d126196c299619ea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;on load check the request for filed if not empty update e-mail address.&lt;/description&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;GetEmailOnLoad&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if (isLoading || newValue === '') {
+		return;
+	}
+
+	// Instantiate the GetEmailAddress Script Include 
+	var getEmailAddr = new GlideAjax('GetEmailAddress');
+	// Specify the getEmail method
+	getEmailAddr.addParam('sysparm_name','getEmail');
+	// Pass the Requested for sys_id
+	getEmailAddr.addParam('sysparm_userID', g_form.getValue('u_requested_for'));
+	// Send the request to the server
+	getEmailAddr.getXML(populateEmailField);
+
+
+	// When the response is back from the server
+	function populateEmailField(response){
+		// Extract the email address from the response, clear any value from the email field, 
+		// set new value in the email field
+		var emailFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+		g_form.clearValue('u_requested_for_email');
+		g_form.setValue('u_requested_for_email',emailFromScriptInclude);
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-01 11:02:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1e41a2dbdb3b8010d126196c299619ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetEmailOnLoad&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NEEDIT" source="x_441942_needit"&gt;9201b3c7db238010d126196c299619fd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NEEDIT"&gt;9201b3c7db238010d126196c299619fd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_1e41a2dbdb3b8010d126196c299619ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-01 11:02:39&lt;/sys_updated_on&gt;&lt;table&gt;x_441942_needit_neeit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>886506696</payload_hash>
+        <record_name>GetEmailOnLoad</record_name>
+        <reverted_from/>
+        <source>1601b3c7db238010d126196c299619ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 11:02:39</sys_created_on>
+        <sys_id>1e22e25fdb3b8010d126196c29961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17135684c040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 11:02:39</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>5622e25f3a3b80103679cd7d7cfe4627</update_guid>
+        <update_guid_history>5622e25f3a3b80103679cd7d7cfe4627:886506696</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 11:05:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>052ab0aeb9aa4606933100e7678c24d9</sys_id>
+        <sys_metadata>1e41a2dbdb3b8010d126196c299619ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailOnLoad</sys_name>
+        <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
+        <sys_parent display_value="NeedIT">edd10b90db730010d126196c2996190c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
+        <sys_scope_delete display_value="">51f32838371246b8b9a359036f46e210</sys_scope_delete>
+        <sys_update_name>sys_script_client_1e41a2dbdb3b8010d126196c299619ea</sys_update_name>
+        <sys_update_version display_value="sys_script_client_1e41a2dbdb3b8010d126196c299619ea">1e22e25fdb3b8010d126196c29961927</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 11:05:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
