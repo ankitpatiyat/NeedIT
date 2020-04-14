@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
-        <order>1000</order>
-        <role/>
+        <order>10</order>
+        <role display_value="x_441942_needit.admin" name="x_441942_needit.admin">a131cae7db77c010d126196c29961901</role>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-19 11:55:13</sys_created_on>
-        <sys_id>ed81bbc7db238010d126196c29961978</sys_id>
+        <sys_created_on>2020-04-02 03:17:36</sys_created_on>
+        <sys_id>eb410ee7db77c010d126196c2996194a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>a5813fc3db238010d126196c2996195f</sys_name>
+        <sys_name>a131cae7db77c010d126196c29961901</sys_name>
         <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
         <sys_policy/>
         <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
-        <sys_update_name>sys_embedded_help_role_ed81bbc7db238010d126196c29961978</sys_update_name>
+        <sys_update_name>sys_embedded_help_role_eb410ee7db77c010d126196c2996194a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-19 11:55:13</sys_updated_on>
+        <sys_updated_on>2020-04-02 03:17:36</sys_updated_on>
     </sys_embedded_help_role>
 </record_update>

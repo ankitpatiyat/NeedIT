@@ -2,7 +2,7 @@
     <sys_ui_application action="INSERT_OR_UPDATE">
         <active>true</active>
         <hint/>
-        <name>NeeIT</name>
+        <name>NeedIT</name>
         <order/>
         <roles>x_441942_needit.neeit_user</roles>
         <sys_class_name>sys_ui_application</sys_class_name>
@@ -11,14 +11,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fd220f90db730010d126196c299619f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>NeeIT</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NeedIT</sys_name>
         <sys_overrides/>
         <sys_package display_value="NEEDIT" source="x_441942_needit">9201b3c7db238010d126196c299619fd</sys_package>
         <sys_policy/>
         <sys_scope display_value="NEEDIT">9201b3c7db238010d126196c299619fd</sys_scope>
         <sys_update_name>sys_ui_application_fd220f90db730010d126196c299619f6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-23 05:40:39</sys_updated_on>
+        <sys_updated_on>2020-04-03 01:48:06</sys_updated_on>
     </sys_ui_application>
 </record_update>
