@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIT" max_length="40" name="x_441942_needit_neeit" type="collection">
+    <element audit="true" extends="task" label="NeedIT" max_length="40" name="x_441942_needit_neeit" sizeclass="5" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="integer"/>
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="New field 3" max_length="40" name="u_integer_1" type="integer"/>
@@ -22,6 +22,7 @@
             <choice>
                 <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="0" value="Human Resources 2"/>
                 <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
                 <element inactive_on_update="false" label="Humar Resources 1" sequence="1" value="hr2"/>
                 <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
